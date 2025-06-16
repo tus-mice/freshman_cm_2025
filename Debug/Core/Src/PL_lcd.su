@@ -1,0 +1,7 @@
+../Core/Src/PL_lcd.c:13:6:lcd_cmd	32	static
+../Core/Src/PL_lcd.c:26:6:lcd_data	32	static
+../Core/Src/PL_lcd.c:39:6:pl_lcd_puts	16	static
+../Core/Src/PL_lcd.c:44:6:pl_lcd_init	8	static
+../Core/Src/PL_lcd.c:59:6:pl_lcd_move	16	static
+../Core/Src/PL_lcd.c:64:6:pl_lcd_pos	16	static
+../Core/Src/PL_lcd.c:69:6:pl_lcd_clear	8	static
