@@ -166,7 +166,7 @@ int main(void) {
 		pl_lcd_puts(strBuffer);
 
 //		printf("OK: %d\n\r", cnt);
-		printf("S1: %d, S2: %d, S3: %d, S4: %d\n\r", g_sensor[0], g_sensor[1], g_sensor[2], g_sensor[3]);
+		printf("S1: %d, S2: %d, S3: %d, S4: %d\n\r", g_ADCBuffer[1], g_ADCBuffer[2], g_ADCBuffer[3], g_ADCBuffer[4]);
 
 		if (HAL_GPIO_ReadPin(SWITCH_1_GPIO_Port, SWITCH_1_Pin) == 0) {
 

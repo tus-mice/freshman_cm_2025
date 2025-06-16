@@ -2897,18 +2897,18 @@ int main(void) {
  8001982:	f7ff fb81 	bl	8001088 <pl_lcd_puts>
 
 //		printf("OK: %d\n\r", cnt);
-		printf("S1: %d, S2: %d, S3: %d, S4: %d\n\r", g_sensor[0], g_sensor[1], g_sensor[2], g_sensor[3]);
+		printf("S1: %d, S2: %d, S3: %d, S4: %d\n\r", g_ADCBuffer[1], g_ADCBuffer[2], g_ADCBuffer[3], g_ADCBuffer[4]);
  8001986:	4b2e      	ldr	r3, [pc, #184]	; (8001a40 <main+0x174>)
- 8001988:	881b      	ldrh	r3, [r3, #0]
+ 8001988:	885b      	ldrh	r3, [r3, #2]
  800198a:	4619      	mov	r1, r3
  800198c:	4b2c      	ldr	r3, [pc, #176]	; (8001a40 <main+0x174>)
- 800198e:	885b      	ldrh	r3, [r3, #2]
+ 800198e:	889b      	ldrh	r3, [r3, #4]
  8001990:	461a      	mov	r2, r3
  8001992:	4b2b      	ldr	r3, [pc, #172]	; (8001a40 <main+0x174>)
- 8001994:	889b      	ldrh	r3, [r3, #4]
+ 8001994:	88db      	ldrh	r3, [r3, #6]
  8001996:	4618      	mov	r0, r3
  8001998:	4b29      	ldr	r3, [pc, #164]	; (8001a40 <main+0x174>)
- 800199a:	88db      	ldrh	r3, [r3, #6]
+ 800199a:	891b      	ldrh	r3, [r3, #8]
  800199c:	9300      	str	r3, [sp, #0]
  800199e:	4603      	mov	r3, r0
  80019a0:	4828      	ldr	r0, [pc, #160]	; (8001a44 <main+0x178>)
@@ -2988,7 +2988,7 @@ int main(void) {
  8001a34:	0800c7b0 	.word	0x0800c7b0
  8001a38:	0800c7b8 	.word	0x0800c7b8
  8001a3c:	0800c7c0 	.word	0x0800c7c0
- 8001a40:	2000020c 	.word	0x2000020c
+ 8001a40:	200001f0 	.word	0x200001f0
  8001a44:	0800c7cc 	.word	0x0800c7cc
  8001a48:	48000400 	.word	0x48000400
 
