@@ -123,9 +123,9 @@ int main(void) {
 
 	int cnt = 0;
 
-	float batf;
-	uint16_t bat;
-	char batBuffer[17] = { 0 };
+//	float batf;
+//	uint16_t bat;
+//	char batBuffer[17] = { 0 };
 
 	/* USER CODE END 2 */
 
@@ -150,14 +150,14 @@ int main(void) {
 //	  pl_lcd_pos(0,0);
 //	  pl_lcd_puts(batBuffer);
 
-		HAL_ADC_Start_DMA(&hadc1, (uint32_t*) g_ADCBuffer,
-				sizeof(g_ADCBuffer) / sizeof(uint16_t));
-
-		sprintf(batBuffer, "%d", g_ADCBuffer[1]);
-
-		pl_lcd_pos(0, 0);
-		pl_lcd_puts(batBuffer);
-
+//		HAL_ADC_Start_DMA(&hadc1, (uint32_t*) g_ADCBuffer,
+//				sizeof(g_ADCBuffer) / sizeof(uint16_t));
+//
+//		sprintf(batBuffer, "%d", g_ADCBuffer[1]);
+//
+//		pl_lcd_pos(0, 0);
+//		pl_lcd_puts(batBuffer);
+//
 		char strBuffer[17] = { 0 };
 		sprintf(strBuffer, "CNT=%04d", cnt);
 		cnt++;
@@ -165,7 +165,8 @@ int main(void) {
 		pl_lcd_pos(1, 0);
 		pl_lcd_puts(strBuffer);
 
-		printf("OK: %d\n\r", cnt);
+//		printf("OK: %d\n\r", cnt);
+		printf("S1: %d, S2: %d, S3: %d, S4: %d\n\r", g_sensor[0], g_sensor[1], g_sensor[2], g_sensor[3]);
 
 		if (HAL_GPIO_ReadPin(SWITCH_1_GPIO_Port, SWITCH_1_Pin) == 0) {
 
