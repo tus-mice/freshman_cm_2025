@@ -29,7 +29,7 @@
 /* USER CODE BEGIN Includes */
 #include "PL_timer.h"
 #include "PL_lcd.h"
-#include <stdio.h>
+#include "stdio.h"
 #include "PL_sensor.h"
 /* USER CODE END Includes */
 
@@ -164,6 +164,8 @@ int main(void) {
 
 		pl_lcd_pos(1, 0);
 		pl_lcd_puts(strBuffer);
+
+		printf("OK: %d\n\r", cnt);
 
 		if (HAL_GPIO_ReadPin(SWITCH_1_GPIO_Port, SWITCH_1_Pin) == 0) {
 
